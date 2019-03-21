@@ -1,0 +1,44 @@
+{
+    "name": "yangze/laravelsmartprogram",
+    "description": ":description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zhenyangze",
+            "email": "zhenyangze@gmail.com",
+            "homepage": "https://github.com/zhenyangze"
+        }
+    ],
+    "homepage": "https://github.com/yangze/laravelsmartprogram",
+    "keywords": ["Laravel", "LaravelSmartprogram"],
+    "require": {
+        "illuminate/support": "~5",
+        "wi1dcard/baidu-mini-program-sdk": "dev-master",
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "yangze\\LaravelSmartprogram\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "yangze\\LaravelSmartprogram\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "yangze\\LaravelSmartprogram\\LaravelSmartprogramServiceProvider"
+            ],
+            "aliases": {
+                "LaravelSmartprogram": "yangze\\LaravelSmartprogram\\Facades\\LaravelSmartprogram"
+            }
+        }
+    }
+}
