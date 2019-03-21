@@ -13,7 +13,7 @@
     "keywords": ["Laravel", "LaravelSmartprogram"],
     "require": {
         "illuminate/support": "~5",
-        "wi1dcard/baidu-mini-program-sdk": "dev-master",
+        "wi1dcard/baidu-mini-program-sdk": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "~7.0",
