@@ -30,7 +30,7 @@ class SmartProgram
     {
         $this->config = $config;
         $this->app = new BaiduClient(
-            array_get($this->config, 'app_id'),
+            array_get($this->config, 'app_key'),
             array_get($this->config, 'app_secret')
         );
     }
