@@ -46,12 +46,12 @@ class LaravelSmartprogramServiceProvider extends ServiceProvider
                 continue;
             }
             foreach(config('laravelsmartprogram.' . $type) as $account => $config) {
-                $name = 'laravelsmartprogram.' . $type . $account;
+                $name = 'laravelsmartprogram.' . $type . '.' . $account;
                 $this->app->singleton($name, function() use ($class, $config) {
                     return new $class($config);
                 });
 
-                $name = 'baidu.'  .$type . $account;
+                $name = 'baidu.' . $type . '.' . $account;
                 $this->app->singleton($name, function() use ($class, $config) {
                     return new $class($config);
                 });
